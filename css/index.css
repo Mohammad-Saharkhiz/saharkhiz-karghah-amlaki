@@ -1,0 +1,445 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Far_Abdoullah';
+    src: url("../fonts/Far_Abdoullah.ttf");
+}
+
+body {
+    /*background-image: url("../image/background.jpg");*/
+    background-color: rgb(249,249,251);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.main_menu {
+    width: 100%;
+    position: sticky;
+    height: 45px;
+    background-color: rgba(89,89,89,1);
+    display: inline-block;
+}
+
+.main_menu>#menu {
+    width: 100%;
+    height: 45px;
+    position: relative;
+}
+
+.main_menu>#menu>#brand {
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+    font-family: Far_Abdoullah;
+}
+
+#brand div {
+    text-align: center;
+    font-family: Far_Abdoullah;
+    height: 100%;
+    display: inline-block;
+    width: 200px;
+    color: rgba(240,240,240,1);
+    cursor: pointer;
+}
+
+.main_menu>div>.btns_list {
+    height: 100%;
+    display: inline-block;
+    float: right;
+    vertical-align: center;
+}
+
+.btns_list>ul {
+    list-style-type: none;
+    height: 100%;
+    margin: 0px;
+    list-style-position: inside;
+    padding: 0px;
+    z-index: 100;
+    position: absolute;
+}
+
+.btns_list>ul li {
+    list-style-type: none;
+    height: 100%;
+    width: 130px;
+    background-color: rgba(105,105,105,1);
+    color: rgba(230,230,230,1);
+    float: right;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: center;
+    line-height: 45px;
+    font-family: "2  Koodak";
+    font-size: 14pt;
+    transition: 0.4s;
+}
+
+.btns_list>ul>li>img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+.btns_list>ul li:hover {
+    width: 150px;
+    background-color: rgba(125,125,125,1);
+    transition: 0.4s;
+}
+
+.menu_bar {
+    width: 100%;
+    background-color: rgba(150,150,150,1);
+    display: inline-block;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    position: fixed;
+    top: 60px;
+    opacity: 0;
+    visibility: hidden;
+    right: 0px;
+    z-index: 100;
+    transition: 0.4s;
+}
+
+.menu_bar > div {
+    display: inline-block;
+    float: right;
+    width: 25%;
+}
+
+.menu_bar > div > span {
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    text-align: right;
+    padding: 4px;
+    vertical-align: center;
+    font-family: "B Titr";
+    cursor: pointer;
+    border-right: rgba(230,230,230,1) solid 2px;
+    color: rgba(220,220,220,1);
+    transition: 0.4s;
+}
+
+.menu_bar > div > span:hover {
+    padding-right: 30px;
+    transition: 0.4s;
+}
+
+.menu_bar > div > span:active {
+    color: rgba(190,190,190,1);
+    transition: 0.4s;
+}
+
+.my_panorama {
+    width: 100%;
+    height: 650px;
+    position: relative;
+}
+
+.my_panorama > button {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: azure;
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
+    top: 200px;
+    position: absolute;
+    border: none;
+    box-shadow: #5c636a 0px 0px 7px 1px;
+    z-index: 100;
+}
+
+.my_panorama > .Slogan {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    z-index: 100;
+}
+
+.my_panorama > .Slogan > div {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    height: 75px;
+    line-height: 75px;
+    display: inline-block;
+    text-align: center;
+    font-family: "2  Koodak";
+    color: white;
+
+    font-size: 35pt;
+    background-color: rgba(100,100,100,0.3);
+    border-radius: 25px;
+}
+
+.index_text {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+.index_text span {
+    width: 75%;
+    display: inline-block;
+    line-height: 40px;
+    font-family: "2  Koodak";
+    font-size: 25pt;
+}
+
+.footer {
+    width: 100%;
+    display: inline-block;
+    background-color: rgba(69,69,69,1);
+    text-align: center;
+    font-family: "B Titr";
+    font-size: 24pt;
+    color: rgba(240,240,240,1);
+}
+
+.footer> div {
+    width: 33%;
+    height: 200px;
+    display: inline-block;
+    float: right;
+    text-align: right;
+    padding: 15px;
+}
+
+.footer > div > div {
+    display: inline-block;
+    float: right;
+    width: 100%;
+    font-family: "B Titr";
+    font-size: 16pt;
+    color: rgba(240,240,240,1);
+    background-color: rgba(90,90,90,1);
+    border-radius: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    text-align: center;
+    line-height:50px;
+    height: 50px;
+}
+
+.footer > div > div > i {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.web_developer {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.extra_text {
+    padding: 20px;
+    text-align: center;
+    alignment: center;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.extra_text > div {
+    width: 250px;
+    height: 350px;
+    display: block;
+    float: right;
+    text-align: center;
+    font-family: "B Titr";
+    font-size: 15pt;
+    box-shadow: #5c636a 0px 0px 4px 1px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+    transition: 0.4s;
+    background-color: white;
+}
+
+.extra_text > div:hover {
+    box-shadow: #5c636a 0px 0px 15px 1px;
+    transition: 0.4s;
+}
+
+.extra_text > div > img {
+    border-radius: 5px;
+    width: 200px;
+    height: 230px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.extra_text > div > span {
+    width: 100%;
+    line-height: 25px;
+}
+
+.login {
+    position: fixed;
+    right: 0;
+    top: 40px;
+    width: 100%;
+    display: inline-block;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.login > div {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 450px;
+    height: 400px;
+    box-shadow: #5c636a 0px 0px 15px 1px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: white;
+}
+
+.login > div > section {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+    color: black;
+    cursor: pointer;
+    z-index: 20;
+    font-size: 20pt;
+    line-height: 30px;
+    text-align: center;
+    color: #ff253a;
+}
+
+.login > div > span {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 100%;
+    height: 50px;
+    font-family: "B Titr";
+    font-size: 27pt;
+    text-align: center;
+    line-height: 50px;
+    z-index: 10;
+}
+
+.login > div > form {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    font-family: "B Titr";
+    font-size: 13pt;
+    text-align: center;
+}
+
+.login > div > form > section {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    width: 370px;
+    text-align: center;
+}
+
+.login > div > form > section > div > span {
+    width: 120px;
+    float: right;
+    display: inline-block;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.login > div > form > section > div > input {
+    width: 250px;
+    float: right;
+    display: inline-block;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.login > div > form > section > div > button {
+    margin-top:10px;
+    width: 100px;
+    height: 35px;
+    line-height: 0px;
+    font-family: "B Titr";
+    font-size: 15pt;
+}
+
+.login > div a {
+    text-align: center;
+    font-size: 10pt;
+    margin-top: 40px;
+    color: #0a53be !important;
+    text-decoration: underline !important;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.massage {
+    position: fixed;
+    width: 350px;
+    height: 45px;
+    top: 65px;
+    right: 39%;
+    display: inline-block;
+    direction: rtl;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1000;
+    line-height: 45px;
+    font-size: 14pt;
+    font-family: "B Titr";
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: rgba(50,50,50,1);
+    text-align: right;
+    padding-right: 15px;
+    transition: 0.5s;
+}
+
+.danger {
+    border-right: 5px solid rgba(234,134,143,0.7);
+    background-color: rgba(227,93,106,0.7);
+}
+
+.success {
+    border-right: 5px solid rgba(32,221,151,0.7);
+    background-color: rgba(77,212,172,0.7);
+}
+
+
+
+
+

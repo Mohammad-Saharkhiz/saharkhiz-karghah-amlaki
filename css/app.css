@@ -1,0 +1,1361 @@
+@font-face {
+    font-family: "Vazir";
+    src: url(../fonts/Vazir-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Vazir Black";
+    src: url(../fonts/Vazir-Black.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Vazir Bold";
+    src: url(../fonts/Vazir-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Vazir Light";
+    src: url(../fonts/Vazir-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Vazir Medium";
+    src: url(../fonts/Vazir-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Vazir Thin";
+    src: url(../fonts/Vazir-Thin.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Vazir Variable";
+    src: url(../fonts/Vazir-Variable.ttf) format("truetype");
+}   
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+
+/* 
+
+- Grid System
+
+*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row>* {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+.col {
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+.col-1 {
+    width: 8.333333%;
+    flex: 0 0 auto;
+}
+
+.col-2 {
+    width: 16.666666%;
+    flex: 0 0 auto;
+}
+
+.col-3 {
+    width: 25%;
+    flex: 0 0 auto;
+}
+
+.col-4 {
+    width: 33.333333%;
+    flex: 0 0 auto;
+}
+
+.col-5 {
+    width: 41.666666%;
+    flex: 0 0 auto;
+}
+
+.col-6 {
+    width: 50%;
+    flex: 0 0 auto;
+}
+
+.col-7 {
+    width: 58.333333%;
+    flex: 0 0 auto;
+}
+
+.col-8 {
+    width: 66.666666%;
+    flex: 0 0 auto;
+}
+
+.col-9 {
+    width: 75%;
+    flex: 0 0 auto;
+}
+
+.col-10 {
+    width: 83.333333%;
+    flex: 0 0 auto;
+}
+
+.col-11 {
+    width: 91.666666%;
+    flex: 0 0 auto;
+}
+
+.col-12 {
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+
+/* sm */
+
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+    .col-sm-1 {
+        width: 8.333333%;
+        flex: 0 0 auto;
+    }
+    .col-sm-2 {
+        width: 16.666666%;
+        flex: 0 0 auto;
+    }
+    .col-sm-3 {
+        width: 25%;
+        flex: 0 0 auto;
+    }
+    .col-sm-4 {
+        width: 33.333333%;
+        flex: 0 0 auto;
+    }
+    .col-sm-5 {
+        width: 41.666666%;
+        flex: 0 0 auto;
+    }
+    .col-sm-6 {
+        width: 50%;
+        flex: 0 0 auto;
+    }
+    .col-sm-7 {
+        width: 58.333333%;
+        flex: 0 0 auto;
+    }
+    .col-sm-8 {
+        width: 66.666666%;
+        flex: 0 0 auto;
+    }
+    .col-sm-9 {
+        width: 75%;
+        flex: 0 0 auto;
+    }
+    .col-sm-10 {
+        width: 83.333333%;
+        flex: 0 0 auto;
+    }
+    .col-sm-11 {
+        width: 91.666666%;
+        flex: 0 0 auto;
+    }
+    .col-sm-12 {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+}
+
+
+/* md */
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+    .col-md-1 {
+        width: 8.333333%;
+        flex: 0 0 auto;
+    }
+    .col-md-2 {
+        width: 16.666666%;
+        flex: 0 0 auto;
+    }
+    .col-md-3 {
+        width: 25%;
+        flex: 0 0 auto;
+    }
+    .col-md-4 {
+        width: 33.333333%;
+        flex: 0 0 auto;
+    }
+    .col-md-5 {
+        width: 41.666666%;
+        flex: 0 0 auto;
+    }
+    .col-md-6 {
+        width: 50%;
+        flex: 0 0 auto;
+    }
+    .col-md-7 {
+        width: 58.333333%;
+        flex: 0 0 auto;
+    }
+    .col-md-8 {
+        width: 66.666666%;
+        flex: 0 0 auto;
+    }
+    .col-md-9 {
+        width: 75%;
+        flex: 0 0 auto;
+    }
+    .col-md-10 {
+        width: 83.333333%;
+        flex: 0 0 auto;
+    }
+    .col-md-11 {
+        width: 91.666666%;
+        flex: 0 0 auto;
+    }
+    .col-md-12 {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+}
+
+
+/* lg */
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+    .col-lg-1 {
+        width: 8.333333%;
+        flex: 0 0 auto;
+    }
+    .col-lg-2 {
+        width: 16.666666%;
+        flex: 0 0 auto;
+    }
+    .col-lg-3 {
+        width: 25%;
+        flex: 0 0 auto;
+    }
+    .col-lg-4 {
+        width: 33.333333%;
+        flex: 0 0 auto;
+    }
+    .col-lg-5 {
+        width: 41.666666%;
+        flex: 0 0 auto;
+    }
+    .col-lg-6 {
+        width: 50%;
+        flex: 0 0 auto;
+    }
+    .col-lg-7 {
+        width: 58.333333%;
+        flex: 0 0 auto;
+    }
+    .col-lg-8 {
+        width: 66.666666%;
+        flex: 0 0 auto;
+    }
+    .col-lg-9 {
+        width: 75%;
+        flex: 0 0 auto;
+    }
+    .col-lg-10 {
+        width: 83.333333%;
+        flex: 0 0 auto;
+    }
+    .col-lg-11 {
+        width: 91.666666%;
+        flex: 0 0 auto;
+    }
+    .col-lg-12 {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+}
+
+
+/* xl */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+    .col-xl-1 {
+        width: 8.333333%;
+        flex: 0 0 auto;
+    }
+    .col-xl-2 {
+        width: 16.666666%;
+        flex: 0 0 auto;
+    }
+    .col-xl-3 {
+        width: 25%;
+        flex: 0 0 auto;
+    }
+    .col-xl-4 {
+        width: 33.333333%;
+        flex: 0 0 auto;
+    }
+    .col-xl-5 {
+        width: 41.666666%;
+        flex: 0 0 auto;
+    }
+    .col-xl-6 {
+        width: 50%;
+        flex: 0 0 auto;
+    }
+    .col-xl-7 {
+        width: 58.333333%;
+        flex: 0 0 auto;
+    }
+    .col-xl-8 {
+        width: 66.666666%;
+        flex: 0 0 auto;
+    }
+    .col-xl-9 {
+        width: 75%;
+        flex: 0 0 auto;
+    }
+    .col-xl-10 {
+        width: 83.333333%;
+        flex: 0 0 auto;
+    }
+    .col-xl-11 {
+        width: 91.666666%;
+        flex: 0 0 auto;
+    }
+    .col-xl-12 {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+}
+
+
+/* xxl */
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1370px;
+    }
+    .col-xxl-1 {
+        width: 8.333333%;
+        flex: 0 0 auto;
+    }
+    .col-xxl-2 {
+        width: 16.666666%;
+        flex: 0 0 auto;
+    }
+    .col-xxl-3 {
+        width: 25%;
+        flex: 0 0 auto;
+    }
+    .col-xxl-4 {
+        width: 33.333333%;
+        flex: 0 0 auto;
+    }
+    .col-xxl-5 {
+        width: 41.666666%;
+        flex: 0 0 auto;
+    }
+    .col-xxl-6 {
+        width: 50%;
+        flex: 0 0 auto;
+    }
+    .col-xxl-7 {
+        width: 58.333333%;
+        flex: 0 0 auto;
+    }
+    .col-xxl-8 {
+        width: 66.666666%;
+        flex: 0 0 auto;
+    }
+    .col-xxl-9 {
+        width: 75%;
+        flex: 0 0 auto;
+    }
+    .col-xxl-10 {
+        width: 83.333333%;
+        flex: 0 0 auto;
+    }
+    .col-xxl-11 {
+        width: 91.666666%;
+        flex: 0 0 auto;
+    }
+    .col-xxl-12 {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+}
+
+
+:root {
+    --primary-color: #d97706;
+    --text-color: #333333;
+    --app-bg-color: #fff;
+    --section-bg-color: #fcd34d;
+}
+
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Vazir";
+    overflow-x: hidden;
+    background-color: rgba(230, 230, 230, 0.4);
+    position: relative;
+}
+
+/*
+
+-- Header --
+
+*/
+
+.header{
+    padding: 2rem 0;
+    background-color: var(--app-bg-color);
+    background-color: rgba(230, 230, 230, 0.4);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__wrapper{
+
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.menu--items{
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.menu__links{
+    font-size: 2rem;
+    transition: color 200ms ease-in-out;
+}
+
+.menu__links:hover{
+    color: var(--primary-color);
+}
+
+.nav__home-link{
+
+}
+
+.home-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.title-main-page{
+    font-size: 2.4rem;
+    color: var(--text-color);
+}
+
+.title-main-page__icone{
+    width: 4rem;
+    height: 4rem
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    /* border: 0.3px solid #4bbe7d; */
+    border-radius: 1.5rem;
+    padding: 1rem 4rem;
+    background-color: var(--section-bg-color);
+    box-shadow: 0 0 1rem rgba(252, 211, 77, 0.9);
+    cursor: pointer;
+}
+
+.sign-icon{
+    width: 3rem;
+}
+
+.nav-link{
+    color: var(--primary-color);
+    font-family: "Vazir Bold";
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* border: 0.3px solid #4bbe7d; */
+    border-radius: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: var(--section-bg-color);
+    box-shadow: 0 0 1rem rgba(252, 211, 77, 0.9);
+    cursor: pointer;
+}
+
+.user-profile__title{
+    color: var(--primary-color);
+    font-family: "Vazir Bold";
+}
+
+.profile-details{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 20rem;
+    height: 12rem;
+    padding: 2rem 1rem;
+    background-color: var(--section-bg-color);
+    z-index: 3;
+    left: 1.5rem;
+    border-radius: 1.5rem;
+    margin-top: 0.8rem;
+    transition: all 200ms ease-in-out;
+}
+
+.profile-details-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile__exit--icon{
+    width: 4rem;
+    left: 1rem;
+}
+
+.profile-exit-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/*
+
+-- Main --
+
+*/
+
+.main{
+    position: relative;
+}
+
+/*
+
+-- Homepage Image --
+
+*/
+
+.homepage-image{
+    background-image: url(../image/L3fawQ.jpg);
+    width: 100%;
+    height: 68rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -20rem;
+    opacity: 0.9;
+}
+
+.homepage-image__content{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.homepage-image__title{
+    font-size: 4rem;
+    font-family: "Vazir Bold";
+    color: #fff;
+    display: inline;
+    border-radius: 3rem;
+}
+
+/*
+
+-- Buy --
+
+*/
+
+.buy{
+    margin-top: 12rem;
+}
+
+.section-headedr{
+    text-align: center;
+}
+
+.section-header__title{
+    color: var(--primary-color);
+    font-family: "Vazir Bold";
+    font-size: 3.5rem;
+}
+
+.section-header__caption{
+    color: var(--text-color);
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    margin-top: 0.8rem;
+}
+
+.section-header__line {
+    position: relative;
+    display: block;
+    width: 2rem;
+    height: 0.7rem;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    border-radius: 2rem;
+}
+
+.section-header__line::after {
+    position: absolute;
+    content: " ";
+    width: 9rem;
+    height: 0.13rem;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.section-header__line::before {
+    position: absolute;
+    content: " ";
+    width: 9rem;
+    height: 0.13rem;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: -8rem;
+}
+
+.buy__wrapper{
+    margin-top: 5rem;
+    box-shadow: 0 0 4rem rgba(252, 211, 77, 0.3);
+    background-color: var(--app-bg-color);
+}
+
+.buy__img-wrapper{
+    margin-bottom: 0;
+}
+
+.buy__img{
+    width: 100%;
+    height: 100%;
+}
+
+.buy-content{
+    padding: 4rem;
+    margin-bottom: 0;
+}
+
+.buy__title{
+    font-family: "Vazir Black";
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.buy__caption{
+    margin-top: 2rem;
+    text-align: justify;
+    line-height: 3rem;
+}
+
+.buy-list__title{
+    font-family: "Vazir Black";
+    opacity: 0.8;
+    margin-top: 5rem;
+}
+
+.buy-list{
+    margin-top: 2rem;
+}
+
+.buy-list__item{
+    line-height: 2rem;
+}
+
+.buy-list__item::before {
+    content: "·";
+    font-size: 70px;
+    vertical-align: text-bottom;
+    line-height: 14px;
+    color: var(--primary-color);
+}
+
+.buy-list__item>span {
+    color: var(--text-color);
+}
+
+/*
+
+-- rent --
+
+*/
+
+.rent{
+    margin-top: 12rem;
+}
+
+.rent__wrapper{
+    margin-top: 5rem;
+    box-shadow: 0 0 4rem rgba(252, 211, 77, 0.3);
+    background-color: var(--app-bg-color);
+}
+
+.rent__img-wrapper{
+    margin-bottom: 0;
+}
+
+.rent__img{
+    width: 100%;
+    height: 100%;
+}
+
+.rent-content{
+    padding: 4rem;
+    margin-bottom: 0;
+}
+
+.rent__title{
+    font-family: "Vazir Black";
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.rent__caption{
+    margin-top: 2rem;
+    text-align: justify;
+    line-height: 3rem;
+}
+
+.rent-list__title{
+    font-family: "Vazir Black";
+    opacity: 0.8;
+    margin-top: 5rem;
+}
+
+.rent-list{
+    margin-top: 2rem;
+}
+
+.rent-list__item{
+    line-height: 2rem;
+}
+
+.rent-list__item::before {
+    content: "·";
+    font-size: 70px;
+    vertical-align: text-bottom;
+    line-height: 14px;
+    color: var(--primary-color);
+}
+
+.rent-list__item>span {
+    color: var(--text-color);
+}
+
+/*
+
+-- sale --
+
+*/
+
+.sale{
+    margin-top: 12rem;
+}
+
+.sale__wrapper{
+    margin-top: 5rem;
+    box-shadow: 0 0 4rem rgba(252, 211, 77, 0.3);
+    background-color: var(--app-bg-color);
+}
+
+.sale__img-wrapper{
+    margin-bottom: 0;
+}
+
+.sale__img{
+    width: 100%;
+    height: 100%;
+}
+
+.sale-content{
+    padding: 4rem;
+    margin-bottom: 0;
+}
+
+.sale__title{
+    font-family: "Vazir Black";
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.sale__caption{
+    margin-top: 2rem;
+    text-align: justify;
+    line-height: 3rem;
+}
+
+.sale-list__title{
+    font-family: "Vazir Black";
+    opacity: 0.8;
+    margin-top: 5rem;
+}
+
+.sale-list{
+    margin-top: 2rem;
+}
+
+.sale-list__item{
+    line-height: 2rem;
+}
+
+.sale-list__item::before {
+    content: "·";
+    font-size: 70px;
+    vertical-align: text-bottom;
+    line-height: 14px;
+    color: var(--primary-color);
+}
+
+.sale-list__item>span {
+    color: var(--text-color);
+}
+
+.shape{
+    position: absolute;
+    width: 80rem;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.shape_1{
+    right: -35rem;
+    top: 67rem;
+}
+
+.shape_2{
+    left: -35rem;
+    top: 150rem;
+}
+
+.shape_3{
+    right: -35rem;
+    top: 210rem;
+}
+
+/*
+
+-- Footer --
+
+*/
+
+.footer{
+    background-image: linear-gradient(200deg, rgb(255, 222, 115) ,rgb(159, 198, 224));
+    margin-top: 10rem;
+}
+
+.footer-wrapper{
+    padding: 4rem 15rem;
+}
+
+.footer-wrapper-1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us{
+    max-width: 40%;
+}
+
+.about-us__title{
+    font-family: "vazir Bold";
+    font-size: 2rem;
+}
+
+.about-us__caption{
+    margin-top: 2rem;
+    text-align: justify;
+    line-height: 2.5rem;
+}
+
+.social-networks{
+
+}
+
+.social-networks__title{
+    font-family: "vazir Bold";
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.instagrem_link{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+}
+
+.instagrem{
+    width: 4rem;
+    height: 4rem;
+}
+
+.instagrem-link-caption{
+    font-size: 1.7rem;
+    transition: color 200ms ease-in-out;
+}
+
+.instagrem-link-caption:hover{
+    color: var(--primary-color);
+}
+
+.telegram_link{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.telegram{
+    width: 4rem;
+    height: 4rem;
+}
+
+.telegram-link-caption{
+    font-size: 1.7rem;
+    transition: color 200ms ease-in-out;
+}
+
+.telegram-link-caption:hover{
+    color: var(--primary-color);
+}
+
+.fotter-wrapper-2{
+    margin-top: 3rem;
+}
+
+.adress{
+    display: flex;
+    align-items: center;
+}
+
+.adress-icon{
+    width: 6rem;
+    height: 6rem;
+    margin-right: -1.8rem;
+}
+
+.adress__caption{
+    font-family: "Vazir Bold";
+    line-height: 3rem;
+}
+
+.mobile{
+    display: flex;
+    align-items: center;
+}
+
+.mobile-icon{
+    width: 4rem;
+    height: 4rem;
+    margin-right: -1rem;
+    margin-left: 1.1rem;
+}
+
+.mobile-number{
+    font-family: "Vazir Bold";
+    line-height: 3rem;
+}
+
+.login{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 35rem;
+    margin-left: -40rem;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms ease-in-out;
+}
+
+.login-show{
+    opacity: 1;
+    visibility: visible;
+}
+
+.center-screen{
+    width: 60rem;
+    height: 70rem;
+}
+
+.format-login{
+    width: 40rem;
+    height: 50rem;
+    margin-top: -60rem;
+    margin-left: 10rem;
+    background-color: #fff;
+    padding: 3.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 0 rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    color: var(--text-color);
+    font-family: "Vazir Bold";
+    font-size: 2.4rem;
+    background-color: #f6f6f6;
+}
+
+.login-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-icone{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.login-text{
+
+}
+
+.n-input{
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+}
+
+.button{
+    width: 100%;
+    height: 5.2rem;
+    border-radius: 1rem;
+    border-style: double;
+    padding: 0 1rem;
+    font-weight: 300;
+    outline-color: var(--text-color);
+    font-size: 2rem;
+}
+
+.button::placeholder{
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-family: "Vazir";
+}
+
+.submit-login{
+    width: 100%;
+    height: 5.8rem;
+    border-style: none;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-family: "Vazir Bold";
+    background-color: var(--section-bg-color);
+    cursor: pointer;
+}
+
+.choose-login{
+    margin-top: 2rem;
+}
+
+.choose-login-text{  
+    font-size: 1.6rem;
+}
+
+.choose-login__icone{
+    cursor: pointer;
+    transition: all 2000ms ease-in-out;
+    color: #fff;
+}
+
+.not-login{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    line-height: 2rem;
+}
+
+.cover{
+
+}
+
+.cover-show{
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+.welcome{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 30rem;
+    height: 10rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    line-height: 3rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    z-index: 100;
+}
+
+.welcome-wrapper{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.welcome__title{
+
+}
+
+
+.welcome__title-2{
+
+}
+
+.welcome-successful{
+    opacity: 1;
+    visibility: visible;
+    color: #4caf50;
+    background-color: #dbffb0;
+    padding-top: 3rem;
+    transition: all 200ms ease-in-out;
+}
+
+.welcome-unsuccessful{
+    opacity: 1;
+    visibility: visible;
+    color: #c22323;
+    background-color: #ffa5a5;
+    transition: all 200ms ease-in-out;
+}
+
+.communication-developer{
+    background-color: var(--text-color);
+    text-align: center;
+    padding: 0.5rem 0;
+    color: #aeaeae;
+}
+
+@media screen and (max-width: 1400px) {
+    .footer-wrapper{
+        padding: 7rem 10rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .homepage-image {
+        background-position-y: -10rem;
+    }
+    .homepage-image__title {
+        font-size: 3rem;
+    }
+    .shape_2{
+        top: 150rem;
+    }
+    .shape-3{
+        top: 240rem;
+    }
+    .footer-wrapper{
+        padding: 5rem 8rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav__wrapper{
+        display: none;
+    }
+    .homepage-image__title {
+        font-size: 2.5rem;
+    }
+    .buy-content {
+        padding-left: 4rem;
+    }
+    .buy__wrapper{
+        box-shadow: 0 0 4rem rgba(252, 211, 77, 0.3);
+    }
+    .buy-content {
+        order: 2;
+    }
+    .sale-content{
+        order: 2;
+    }
+    .shape_1,
+    .shape_2,
+    .shape_3{
+        display: none;
+    }
+    .homepage-image{
+        margin-bottom: -12rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-wrapper-1{
+        flex-direction: column;
+    }
+    .about-us{
+        max-width: 100%;
+    }
+    .social-networks{
+        margin-top: 4rem;
+        width: 100%;
+    }
+    .footer-wrapper{
+        padding: 7rem 7rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-links{
+        padding: 1rem 2rem;
+    }
+    .title-main-page{
+        font-size: 2rem;
+    }
+    .title-main-page__icone{
+        width: 3rem;
+        height: 3rem
+    }
+    .homepage-image__title {
+        font-size: 2rem;
+    }
+    .homepage-image{
+        background-position-x: -15rem;
+    }
+    .footer-wrapper{
+        padding: 7rem 4rem;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .homepage-image__title {
+        font-size: 1.6rem;
+    }
+    .nav-links{
+        padding: 0.5rem 1.5rem;
+    }
+    .nav-link{
+        font-size: 1.2rem;
+    }
+    .footer-wrapper{
+        padding: 7rem 1rem;
+    }
+}

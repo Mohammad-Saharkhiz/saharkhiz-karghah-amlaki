@@ -1,0 +1,20 @@
+<?php
+
+$host = 'localhost';
+$db = 'real_estate';
+$user_t = 'create_user';
+$password = 'hamed24081381';
+function connect ( $db , $user_t , $password , $host )
+{
+    $dsn = "mysql:host=$host;dbname=$db;charset=UTF8";
+    try {
+        $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
+        return $pdo = new PDO ($dsn , $user_t , $password , $options);
+    }
+    catch ( PDOException $e ){
+        echo $e -> getMessage();
+    }
+}
+return connect( $db , $user_t , $password , $host );
+
+
